@@ -6,5 +6,5 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install netcat
 RUN rm -rf /var/lib/apt/lists/* && \
   apt-get update -q && apt-get install -qy --no-install-recommends \
-  netcat \
+  netcat-openbsd \
   && rm -rf /var/lib/apt/lists/*
